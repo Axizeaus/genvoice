@@ -1,8 +1,33 @@
-# React + Vite
+# My React Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a small website built using **React** as part of a technical screening task for GenVoice. The website features mock authentication, a personal write-up, and a settings page for password management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Mock Authentication**: 
+  - Users can log in with the following credentials:
+    - **Username**: genvoice
+    - **Password**: GenVoice123!
+  - Displays an error message for incorrect credentials.
+
+- **Main Page**: 
+  - Contains a 200-300 word write-up about myself and my skill set.
+
+- **Settings Page**: 
+  - Allows users to change the password for the genvoice account.
+  - Utilizes local storage to ensure the new password is saved and functional.
+
+- **Password Validation**: 
+  - Implemented to enhance security and user experience.
+
+## UI/UX Design
+
+The design of the website is created with user experience in mind.
+
+## Hosting
+
+The website is hosted publicly on [vercel](https://genvoice-chi.vercel.app/). You can access it via the link provided.
+
+
