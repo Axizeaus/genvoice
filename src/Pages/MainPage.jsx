@@ -5,31 +5,36 @@ const MainPage = () => {
         Welcome to My Website!
       </h1>
       <p className="mt-4 text-lg text-center text-gray-700 dark:text-gray-300 leading-relaxed">
-        Hi there! I'm <span className="font-semibold">Ye Man Oo</span>, a web
-        developer from Taunggyi, Shan State, Myanmar. I love building fun and
-        interactive web apps using <span className="font-semibold">React</span>
-        and <span className="font-semibold">Next.js</span>.
+        Hi there! I'm <span className="font-semibold">Ye Man Oo</span>, a
+        passionate web developer from Taunggyi, Shan State, Myanmar. I
+        specialize in building modern, interactive web applications with{" "}
+        <span className="font-semibold">React</span> and{" "}
+        <span className="font-semibold">Next.js</span>, and I love exploring new
+        technologies to create seamless user experiences.
       </p>
       <p className="mt-4 text-lg text-center text-gray-700 dark:text-gray-300 leading-relaxed">
-        I’ve learned a lot through
-        <span className="font-semibold">The Odin Project</span> and other online
-        resources. My toolkit includes
-        <span className="font-semibold">Python</span>,
-        <span className="font-semibold">JavaScript</span>, and databases like
-        <span className="font-semibold">MongoDB</span> and
-        <span className="font-semibold">PostgreSQL</span>.
+        My tech stack includes <span className="font-semibold">JavaScript</span>
+        , <span className="font-semibold">TypeScript</span>, and{" "}
+        <span className="font-semibold">Python</span>, with expertise in
+        databases like <span className="font-semibold">PostgreSQL</span>,{" "}
+        <span className="font-semibold">MongoDB</span>, and{" "}
+        <span className="font-semibold">SQLite</span>. I also enjoy working with
+        tools like <span className="font-semibold">Docker</span>,{" "}
+        <span className="font-semibold">Git</span>, and various API Technologies
+        including <span className="font-semibold">REST</span> and{" "}
+        <span className="font-semibold">GraphQL</span>.
       </p>
       <p className="mt-4 text-lg text-center text-gray-700 dark:text-gray-300 leading-relaxed">
-        I enjoy creating smooth user experiences and exploring new technologies.
-        Whether it’s building APIs with
-        <span className="font-semibold">REST</span> or
-        <span className="font-semibold">GraphQL</span>, I’m always up for a
-        challenge!
+        When I'm not coding, you’ll find me contributing to projects like{" "}
+        <span className="font-semibold">Buy and Sell Vehicles</span>, or
+        creating mood tracking apps like{" "}
+        <span className="font-semibold">Mood Tracker</span> to help users
+        analyze their emotional well-being. Feel free to explore my work!
       </p>
       <div className="mt-6 text-center">
         <a
           href="https://github.com/Axizeaus"
-          target="#"
+          target="_blank"
           className="inline-block px-6 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300"
         >
           Check Out My Github!
