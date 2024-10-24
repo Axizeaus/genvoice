@@ -33,7 +33,7 @@ const Layout = () => {
     <div
       className={`flex flex-col min-h-screen ${
         selected === "light"
-          ? "bg-white text-gray-800"
+          ? "bg-gray-100 text-gray-800"
           : "bg-gray-900 text-white"
       }`}
     >
@@ -79,8 +79,8 @@ const Layout = () => {
         </div>
       </nav>
       <main
-        className={`flex-grow rounded-lg shadow-md mt-4 ${
-          selected === "light" ? "bg-white" : "bg-gray-800"
+        className={`flex-grow rounded-lg shadow-md mt-4  ${
+          selected === "light" ? "bg-gray-100" : "bg-gray-900"
         }`}
       >
         <Outlet />
