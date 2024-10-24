@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createUserToken, mockAuth } from "../auth";
-
+import PasswordInput from "../components/PasswordInput";
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -37,17 +37,13 @@ const Login = () => {
             className="border border-gray-300 dark:border-gray-600 p-3 mb-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 dark:bg-gray-700 dark:text-white"
             aria-label="Username"
           />
-          <input
-            type="password"
-            placeholder="Password"
+          <PasswordInput
             value={password}
             onChange={(e) => {
               setPassword(e.target.value);
               setError("");
             }}
-            required
-            className="border border-gray-300 dark:border-gray-600 p-3 mb-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 dark:bg-gray-700 dark:text-white"
-            aria-label="Password"
+            placeholder="Password"
           />
           <button
             type="submit"

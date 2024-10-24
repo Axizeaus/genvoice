@@ -38,7 +38,7 @@ const Layout = () => {
       }`}
     >
       <nav
-        className={`shadow-md p-4 flex justify-between items-center ${
+        className={`shadow-md p-4 flex justify-between items-center container mx-auto ${
           selected === "light" ? "bg-white" : "bg-gray-800"
         }`}
       >
@@ -53,7 +53,7 @@ const Layout = () => {
               }`
             }
           >
-            <Home className="inline mr-1" /> Home
+            <Home className="inline mr-1" />
           </NavLink>
           <NavLink
             to="/settings"
@@ -65,7 +65,7 @@ const Layout = () => {
               }`
             }
           >
-            <Settings className="inline mr-1" /> Settings
+            <Settings className="inline mr-1" />
           </NavLink>
         </div>
         <div className="flex items-center space-x-4">
