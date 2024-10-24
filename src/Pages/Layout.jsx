@@ -53,7 +53,7 @@ const Layout = () => {
               }`
             }
           >
-            <Home className="inline mr-1" />
+            <Home className="inline" />
           </NavLink>
           <NavLink
             to="/settings"
@@ -65,7 +65,7 @@ const Layout = () => {
               }`
             }
           >
-            <Settings className="inline mr-1" />
+            <Settings className="inline" />
           </NavLink>
         </div>
         <div className="flex items-center space-x-4">
