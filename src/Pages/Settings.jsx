@@ -11,8 +11,6 @@ const Settings = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  console.log(newPassword);
-
   const validatePassword = (password) => {
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W]).{8,}$/;
 
