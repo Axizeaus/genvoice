@@ -11,6 +11,12 @@ const Settings = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  const validatePassword = (password) => {
+    const passwordRegex =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return passwordRegex.test(password);
+  };
+
   const handleChangePassword = (e) => {
     e.preventDefault();
 
@@ -21,8 +27,10 @@ const Settings = () => {
       return;
     }
 
-    if (newPassword.length < 6) {
-      setError("New password must be at least 6 characters long.");
+    if (!validatePassword(newPassword)) {
+      setError(
+        "New password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one digit, and one special character."
+      );
       return;
     }
 
@@ -52,19 +60,16 @@ const Settings = () => {
             value={currentPassword}
             onChange={(e) => setCurrentPassword(e.target.value)}
             placeholder="Current Password"
-            className="border border-gray-300 dark:border-gray-600 p-3 mb-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 dark:bg-gray-700 dark:text-white"
           />
           <PasswordInput
             value={newPassword}
             onChange={(e) => setNewPassword(e.target.value)}
             placeholder="New Password"
-            className="border border-gray-300 dark:border-gray-600 p-3 mb-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 dark:bg-gray-700 dark:text-white"
           />
           <PasswordInput
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             placeholder="Confirm New Password"
-            className="border border-gray-300 dark:border-gray-600 p-3 mb-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 dark:bg-gray-700 dark:text-white"
           />
           <button
             type="submit"
