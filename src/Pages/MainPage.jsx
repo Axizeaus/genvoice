@@ -29,6 +29,7 @@ const MainPage = () => {
       <div className="mt-6 text-center">
         <a
           href="https://github.com/Axizeaus"
+          target="#"
           className="inline-block px-6 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300"
         >
           Check Out My Github!
