@@ -14,6 +14,8 @@ const Settings = () => {
   const handleChangePassword = (e) => {
     e.preventDefault();
 
+    console.log(getCurrentPassword());
+
     if (!getCurrentPassword() || currentPassword !== getCurrentPassword()) {
       setError("Current password is incorrect.");
       return;

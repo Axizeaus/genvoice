@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { createUserToken, mockAuth } from "../auth";
+import {
+  createUserToken,
+  getCurrentPassword,
+  mockAuth,
+  setInitialPassword,
+} from "../auth";
 import PasswordInput from "../components/PasswordInput";
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -12,6 +17,9 @@ const Login = () => {
     e.preventDefault();
     if (mockAuth(username, password)) {
       createUserToken();
+      if (!getCurrentPassword()) {
+        setInitialPassword();
+      }
       navigate("/");
     } else {
       setError("Invalid username or password");

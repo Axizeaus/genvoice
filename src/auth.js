@@ -12,6 +12,10 @@ export const getCurrentPassword = () => {
   return localStorage.getItem("password");
 };
 
+export const setInitialPassword = () => {
+  localStorage.setItem("password", "GenVoice123!");
+};
+
 export const createUserToken = () => {
   localStorage.setItem("user", true);
 };
