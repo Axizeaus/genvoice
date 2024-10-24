@@ -11,10 +11,13 @@ const Settings = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  console.log(newPassword);
+
   const validatePassword = (password) => {
-    const passwordRegex =
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    return passwordRegex.test(password);
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W]).{8,}$/;
+
+    const tested = passwordRegex.test(password);
+    return tested;
   };
 
   const handleChangePassword = (e) => {
